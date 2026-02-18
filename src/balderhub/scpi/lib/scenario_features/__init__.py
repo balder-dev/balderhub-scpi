@@ -1,6 +1,5 @@
-# TODO add classes / functions from module (if any)
-# TODO delete module if it has no sub elements
+from .scpi_transmission_feature import ScpiTransmissionFeature
 
 __all__ = [
-
+    'ScpiTransmissionFeature',
 ]

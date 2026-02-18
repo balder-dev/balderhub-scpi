@@ -1,6 +1,5 @@
-# TODO add classes / functions from module (if any)
-# TODO delete module if it has no sub elements
+from .socket_scpi_feature import SocketScpiFeature
 
 __all__ = [
-
+    "SocketScpiFeature",
 ]
