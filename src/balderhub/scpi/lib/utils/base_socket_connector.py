@@ -25,7 +25,7 @@ class BaseSocketConnector:
         self._receive_timeout = timeout
 
     @property
-    def termination_char(self) -> bytes:
+    def termination_chars(self) -> bytes:
         """
         :return: specifies the expected termination character
         """
@@ -83,7 +83,7 @@ class BaseSocketConnector:
             readable, _, _ = select.select([self._socket], [], [], max_wait_for_followup_msg_time)
 
             if not readable:
-                if buffer != b'' and buffer[-1] == self.termination_char:
+                if buffer != b'' and buffer[-len(self.termination_chars):] == self.termination_chars:
                     return buffer
                 continue
 
