@@ -8,6 +8,5 @@ This section shows general objects and helper functions that are used with this 
     This BalderHub project doesn't have any utilities.
 
 
-.. todo add your scenarios with .. autoclass
-    .. autoclass:: balderhub.scpi.lib.utilities.MyExampleUtility
-        :members:
+.. autoclass:: balderhub.scpi.lib.utils.BaseSocketConnector
+    :members:

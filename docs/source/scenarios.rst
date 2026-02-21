@@ -7,8 +7,3 @@ scenarios that are implemented in this BalderHub package.
 
 .. note::
     This BalderHub project doesn't have any scenarios.
-
-
-.. todo add your scenarios with .. autoclass
-    .. autoclass:: balderhub.scpi.scenarios.ScenarioMyTest
-        :members:
